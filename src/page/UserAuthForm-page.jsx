@@ -3,11 +3,13 @@
 import InputBox from "../component/input-component";
 import logo from "../assets/brandlogo (1).png"
 import { Link } from "react-router-dom";
+import AnimationWrapper from "../common/page-animation";
 
 
 const UserAuthForm =({type})=>{
     return(
-            <section className="h-cover " style={{marginTop:'2rem'}} >
+            <AnimationWrapper  keyValue={type}>
+                   <section className="h-cover " style={{marginTop:'2rem'}} >
                     <form className="form" style={{display:'block', margin:'0 auto'}}>
                         <img src={logo} alt="Brand Logo" style={{width:'6rem', display:"block", margin:"0 auto"}}/>
                         <h3 style={{textAlign:'center', display:"flex", justifyContent:'center'}}>
@@ -76,7 +78,9 @@ const UserAuthForm =({type})=>{
     
                     </form>
 
-            </section>
+                    </section>
+            </AnimationWrapper>
+           
     )
 }
 
