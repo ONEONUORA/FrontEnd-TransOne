@@ -28,7 +28,10 @@ const HomePage =()=>{
                     <button className="btn btn-light" style={{color:'green', cursor:'default', width:'100%'}}>Discover  <i className="bi bi-arrow-right" style={{color:'blue', fontWeight:'bolder', fontSize:'1.1rem'}}></i> Book <i className="bi bi-arrow-right"  style={{color:'blue', fontWeight:'bolder', fontSize:'1.1rem'}}></i>  Fly</button>
                     <div className="col-12 col-md-6 homewrite1" style={{display:'block', justifyContent:'center', textAlign:'center'}}>
                           <h4 style={{textAlign:''}}>Affordable Flights with Health Tips  for a Worry-Free <br/> Journey</h4>
-                          <button className="btn btn-primary" style={{display:'block', margin:'0 auto'}}>Book A Flight</button>
+                         
+                         <Link to="/signin">
+                              <button className="btn btn-primary" style={{display:'block', margin:'0 auto'}}>Discover Low Fares</button>
+                         </Link> 
                     </div>
                     <div className="col-12 col-md-6" style={{marginTop:"2rem"}}>
                          <img src={image} alt="Aeroplane Image" style={{width:'100%'}}/>

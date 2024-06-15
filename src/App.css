@@ -15,6 +15,24 @@ body{
   border-radius: 5rem;
 }
 
+.profile {
+  width: 3rem; 
+  height: 3rem; 
+  margin-top: 0.25rem;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+}
+
+
+
+.profile1 {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  border-radius: 40%;
+}
+
 /**************************************************************home-page.jsx***********************************************************/
 
 
@@ -159,6 +177,42 @@ section {
   cursor: pointer;
   color: dodgerblue;
 }
+
+
+/******************************************************userNavigation-component**************************************************************/
+.usernav {
+  background-color: white; 
+  position: absolute; 
+  right: 0; 
+  border: 1px solid white; 
+  width: 15rem; 
+  transition-duration: 0.2s; 
+}
+
+.usernav1 {
+  position: absolute; 
+  right: 8%; 
+  top: 80%;
+  z-index: 150;
+}
+
+.signoutbtn {
+  margin-top: 0.3rem;
+  text-align: left; 
+  padding: 1rem; 
+  width: 100%;
+  padding-left: 2rem; 
+  padding-top: 1rem; 
+  border: none;
+  background-color: white;
+}
+
+.signoutbtn:hover {
+  background-color: dodgerblue;
+  color: white; 
+}
+
+
 /****************************************************media query*******************************************************************************/
 
 
