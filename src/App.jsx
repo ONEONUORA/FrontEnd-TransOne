@@ -12,6 +12,7 @@ import RatingUs from './page/rating-page'
 import { createContext, useEffect, useState } from 'react'
 import { lookInSession } from './common/session'
 import Dashboard from './page/userDashboard-page'
+import WeatherApp from './page/weatherApp-page'
 
 
 export const UserContext = createContext({})
@@ -41,6 +42,7 @@ const App= () => {
               <Route path='/signin' element={<UserAuthForm type='sign-in'/>}/> 
               <Route path='/signup' element={<UserAuthForm type='sign-up'/>}/>
               <Route path='/userDashboard-page' element={<Dashboard/>}/>
+              <Route path='/weatherApp-page' element={<WeatherApp/>}/>
               <Route path='*' element={<PageNotFound/>}/>
 
             </Route>
