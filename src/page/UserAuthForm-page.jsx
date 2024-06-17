@@ -9,6 +9,7 @@ import axios from "axios"
 import { storeInSession } from "../common/session";
 import { useContext } from "react";
 import { UserContext } from "../App";
+import {authWithGoogle} from "../common/firebase"
 
 
 const UserAuthForm =({type})=>{
@@ -65,6 +66,17 @@ const UserAuthForm =({type})=>{
           userAuthThroughServer(serverRoute, formData)
         
         
+    }
+
+    const handleGoogleAuth =  (e)=>{
+            e.preventDefault();
+            authWithGoogle().then( user => {
+                console.log(user);
+            })
+            .catch(err => {
+                toast.error("Trouble trying to login through google")
+                return console.log(err)
+            })
     }
     return(
             access_token ? 
