@@ -9,7 +9,7 @@ import humidity_icon from "../assets/humidity.png";
 import wind_icon from "../assets/wind.png";
 import { useContext, useEffect, useRef, useState } from "react";
 import { UserContext } from "../App";
-import { Navigate } from "react-router-dom";
+import { Navigate, Link } from "react-router-dom";
 
 const WeatherApp = () => {
     let {userAuth:{access_token, fullname}} = useContext(UserContext)
@@ -74,6 +74,7 @@ const WeatherApp = () => {
     access_token == null ? <Navigate to='/signin'/>
             :
     <section className="h-cover">
+        <p style={{marginBottom:'3rem', textAlign:"center", textTransform:'capitalize', fontWeight:"bold"}}>Welcome {fullname} to weather forecast</p>
       <div className="weather">
         <div className="search-bar">
           <input ref={inputRef} type="text" placeholder="Search" />
@@ -118,6 +119,10 @@ const WeatherApp = () => {
           <></>
         )}
       </div>
+
+             <Link to="/userDashboard-page">
+                   <button className="btn btn-primary mt-3" style={{margin:'0 auto' , display:'block'}}><i className="bi bi-arrow-left-short"></i>Back To Dashboard</button>
+            </Link>
     </section>
   );
 };
