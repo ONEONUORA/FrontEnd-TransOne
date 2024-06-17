@@ -121,6 +121,7 @@ const UserAuthForm =({type})=>{
 
                         <button
                         className="btn btn-dark"
+                        onClick={handleGoogleAuth}
                         style={{display:'block', margin:'0 auto'}}
                         ><i className="bi bi-google p-2"  style={{color:'red'}}></i>Continue With Google</button>
 
