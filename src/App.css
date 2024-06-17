@@ -222,7 +222,9 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
+
 
 .search-bar{
   display: flex;
@@ -267,22 +269,22 @@ section {
 }
 
 .weather-data{
-  width: 100%;
+  /* width: 100%; */
   margin-top: 40px;
   color: white;
   display: flex;
-  justify-content: space-between;
+ justify-content: space-between;
 }
 
 .weather-data .col{
   display: flex;
   align-items: flex-start;
-  gap: 12px;
+  gap: 2px;
   font-size: 15px;
 }
 
 
-.weather-data .col span{
+.weather-data .col strong{
   display: block;
   font-size: 14px;
 }
@@ -347,6 +349,11 @@ section {
 
 .contact{
   margin-bottom: 2rem;
+}
+
+.weather{
+  width: 100%;
+  margin: 0 auto;
 }
 }
 
@@ -423,5 +430,10 @@ section {
   margin: 2rem 5rem;
   padding: 2rem;
   border-top-right-radius: 2rem;
+}
+
+.weather{
+  width: 80%;
+  margin: 0 auto;
 }
 }
