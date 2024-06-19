@@ -25,7 +25,7 @@ const Navbar = ()=>{
 
     return(
       <>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary" style={{borderBottom:'1px solid blue'}}>
+        <nav className="navbar navbar-expand-lg bg-body-tertiary" style={{borderBottom:''}}>
             <div className="container-fluid" >
                 <Link to='/' style={{ textDecoration:'none'}}>
                     <img src={brandlogo} alt="TransOne Brand logo" style={{width:'5rem'}}/> 

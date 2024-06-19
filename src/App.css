@@ -36,7 +36,8 @@ body{
 /**************************************************************home-page.jsx***********************************************************/
 
 
-.home1{
+.home1,
+.people{
   padding: 1rem 2rem;
 }
 
@@ -294,11 +295,36 @@ section {
   margin: 10px;
 }
 
+
+/***************************************************userDashboard-page.jsx********************************************************************/
+/******************************************************medical suggestion.jsx******************************************************/
+
+
+.App {
+  text-align: center;
+  padding: 2rem;
+}
+
+.App-header {
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.issue-details {
+   text-align: left;
+  margin-top: 20px;
+}
+
+
+
 /****************************************************media query*******************************************************************************/
-
-
 /**************************************smaller screen size**********************************************/
 @media(max-width: 768px) {
+
     .signup{
       display: none;
     }
@@ -355,10 +381,43 @@ section {
   width: 100%;
   margin: 0 auto;
 }
+.booking{
+  display: grid;
+  gap: 40px;
+  position: absolute;
+  border: 2px solid white;
+  background-color: white;
+  top: 63%;
+  padding: 1.5rem 0rem;
+  border-radius: 5rem;
+  justify-content: center;
+
+}
+
+.map{
+  margin-top: 20rem;
+}
+
 }
 
 /**************************************larger screen size**********************************************/
 @media(min-width: 768px) {
+
+  .booking{
+    display: flex;
+    gap: 40px;
+    position: absolute;
+    border: 2px solid white;
+    background-color: white;
+    top: 63%;
+    padding: 1.5rem 0rem;
+    border-radius: 5rem;
+    justify-content: center;
+  }
+
+  .booking button{
+    margin-top: 2rem;
+  }
   section {
         padding-left: 10vw;
         padding-right: 10vw; 
@@ -436,4 +495,8 @@ section {
   width: 80%;
   margin: 0 auto;
 }
+.map{
+  margin-top: 2rem;
+}
+
 }

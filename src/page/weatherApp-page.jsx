@@ -74,7 +74,7 @@ const WeatherApp = () => {
     access_token == null ? <Navigate to='/signin'/>
             :
     <section className="h-cover">
-        <p style={{marginBottom:'3rem', textAlign:"center", textTransform:'capitalize', fontWeight:"bold"}}>Welcome {fullname} to weather forecast</p>
+        <p style={{marginBottom:'3rem',  textTransform:'capitalize', fontWeight:"bold"}}>Welcome {fullname} to weather forecast +</p>
       <div className="weather">
         <div className="search-bar">
           <input ref={inputRef} type="text" placeholder="Search" />

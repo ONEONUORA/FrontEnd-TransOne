@@ -13,6 +13,10 @@ import { createContext, useEffect, useState } from 'react'
 import { lookInSession } from './common/session'
 import Dashboard from './page/userDashboard-page'
 import WeatherApp from './page/weatherApp-page'
+import AiConfigure from './page/AiConfig-page'
+import Emergency from './page/emergency-page'
+import Medical from './page/medicalSuggestion-page'
+import Flight from './page/flightDeals-page'
 
 
 export const UserContext = createContext({})
@@ -43,6 +47,10 @@ const App= () => {
               <Route path='/signup' element={<UserAuthForm type='sign-up'/>}/>
               <Route path='/userDashboard-page' element={<Dashboard/>}/>
               <Route path='/weatherApp-page' element={<WeatherApp/>}/>
+              <Route path="/AiConfig-page" element={<AiConfigure/>}/>
+              <Route path='/emergency-page' element={<Emergency/>}/>
+              <Route path='/medicalSuggestion-page' element={<Medical/>}/>
+              <Route path='/flightDeals-page' element={<Flight/>}/>
               <Route path='*' element={<PageNotFound/>}/>
 
             </Route>
